@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Mule Development Kit
+    Copyright 2010-2011 (c) MuleSoft, Inc.  All rights reserved.  http://www.mulesoft.com
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:spring="http://www.springframework.org/schema/beans"
+      xmlns:brightidea="http://www.mulesoft.org/schema/mule/brightidea"
+      xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/3.2/mule.xsd
+        http://www.mulesoft.org/schema/mule/brightidea http://www.mulesoft.org/schema/mule/brightidea/1.0/mule-brightidea.xsd">
+
+    <brightidea:config host="fourseasons.brightidea.com" apiKey="BDEE033FBBD344B89C31AF827C2C538C" addLoggingFilter="true"/>
+
+    <flow name="testFlow">
+        <!--<brightidea:get-api-data />-->
+        <!--<brightidea:get-affiliate-list/>-->
+        <!--<brightidea:get-api-call-list query="WHERE date > '11/23/09' ORDER BY date DESC LIMIT 5, 10" />-->
+        <!--<brightidea:get-permission-list />-->
+        <!--<brightidea:get-idea-list-for-affiliate affiliate="OD111" />-->
+        <brightidea:get-idea-list-for-member memeberId="11111111-1111-1111-1111-111111111111" />
+        <!--<brightidea:get-api-data />-->
+        <!--<brightidea:get-idea-list-for-affiliate affiliate="OD4152" />-->
+    </flow>
+
+</mule>

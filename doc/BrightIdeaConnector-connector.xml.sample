@@ -1,0 +1,31 @@
+<!-- BEGIN_INCLUDE(brightidea:getApiData) -->
+<brightidea:get-api-data />
+<!-- END_INCLUDE(brightidea:getApiData) -->
+
+<!-- BEGIN_INCLUDE(brightidea:getAffiliateList) -->
+<brightidea:get-affiliate-list/>
+<!-- END_INCLUDE(brightidea:getAffiliateList) -->
+
+<!-- BEGIN_INCLUDE(brightidea:getApiCallList) -->
+<brightidea:get-api-call-list query="WHERE1 date > '11/23/09' ORDER BY date DESC LIMIT 5, 10" />
+<!-- END_INCLUDE(brightidea:getApiCallList) -->
+
+<!-- BEGIN_INCLUDE(brightidea:getPermissionList) -->
+<brightidea:get-permission-list />
+<!-- END_INCLUDE(brightidea:getPermissionList) -->
+
+<!-- BEGIN_INCLUDE(brightidea:getIdeaListForAffiliate) -->
+<brightidea:get-idea-list-for-affiliate affiliate="OD111" />
+<!-- END_INCLUDE(brightidea:getIdeaListForAffiliate) -->
+
+<!-- BEGIN_INCLUDE(brightidea:getIdeaListForMember) -->
+<brightidea:get-idea-list-for-member memeberId="11111111-1111-1111-1111-111111111111" />
+<!-- END_INCLUDE(brightidea:getIdeaListForMember) -->
+
+<!-- BEGIN_INCLUDE(brightidea:createIdea) -->
+        <brightidea:create-idea campaignId="11111111-1111-1111-1111-111111111111"
+                                memeberId="11111111-1111-1111-1111-111111111111"
+                                categoryId="11111111-1111-1111-1111-111111111111"
+                                title="#[header:INBOUND:title]"
+                                body="#[header:INBOUND:body]"/>
+<!-- END_INCLUDE(brightidea:createIdea) -->
