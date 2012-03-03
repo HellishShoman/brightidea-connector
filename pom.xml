@@ -37,4 +37,10 @@
         </repository>
     </repositories>
 
+    <scm>
+        <connection>scm:git:git://github.com:mulesoft/brightidea-connector.git</connection>
+        <developerConnection>scm:git:git@github.com:mulesoft/brightidea-connector.git</developerConnection>
+        <url>http://github.com/mulesoft/brightidea-connector</url>
+    </scm>
+
 </project>
